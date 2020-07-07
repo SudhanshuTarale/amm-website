@@ -1,0 +1,59 @@
+.navbar-background{
+	background-color: #b11f5f;
+	font-size: 0.9rem !important;
+
+}
+.navbar{
+	padding: 0px !important;
+}
+
+.card-background{
+	background-color: #b11f5f;
+	
+}
+a:hover{
+	text-decoration: none;
+}
+.mission{
+	background-color: #eae5e0;
+	font-size: 12px;
+}
+#volunteer-card{
+	border:0px !important;
+}
+onhover-colour:hover{
+	background-color: orange;
+}
+.btn-primary{
+	background-color:#b11f5f;
+	border-color: #b11f5f; 
+}
+.btn{
+	border-radius: 0px;
+}
+.img-container{
+	/*height:225px;*/
+	position: relative;
+	display: inline-block;
+	/*margin: 10px 5px 5px;*/
+}
+.img-text{
+	top:100%;
+	width:28%;
+	height:50px;
+    margin-top: -50px;
+    position: absolute;
+    background-color: #b11f5f;
+    color: white;
+}
+footer{
+ 	background-color: #030354;
+}
+ 
+.onhover-colour{
+	border-radius: 0px;
+}
+.onhover-colour:hover{
+ 	background-color:#f26522;
+ 	color: white;
+}
