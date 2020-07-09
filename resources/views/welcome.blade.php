@@ -16,19 +16,26 @@
 	<!-- Image Carousel starts -->
 	<div id="ImageCarousel" class="carousel slide" data-ride="carousel">
 	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	 		<img class="d-block w-100 img-fluid" style="height: 600px" src="{{ url('/images/first.jpg') }}" alt="Second slide">
-	 		<div class="carousel-caption" style="padding-bottom: 20%">
-	 			<h2>We are Relaible</h2>
-	 			<button class="btn btn-primary">Read More</button>&nbsp;
-	 			<button class="btn btn-primary">About Us</button>
+	    <div class="carousel-item drk active">
+			 <img class="d-block w-100 img-fluid" src="{{ url('/images/first.jpg') }}" alt="Second slide">
+	 		<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
+	 			<h3>Welcome to first image</h3>
+	 			<button class="btn">Read More</button>&nbsp;
+	 			<button class="btn">About Us</button>
+	 		</div>
+
+	    </div>
+	    <div class="carousel-item drk">
+	      	<img class="d-block w-100 img-fluid" src="{{ url('/images/second.jpg') }}" alt="Second slide">
+	      	<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
+	 			<h3>Welcome to second image</h3>
 	 		</div>
 	    </div>
-	    <div class="carousel-item">
-	      	<img class="d-block w-100 img-fluid" src="{{ url('/images/second.jpg') }}" alt="Second slide">
-	    </div>
-	    <div class="carousel-item">
+	    <div class="carousel-item drk">
 	      	<img class="d-block w-100 img-fluid" src="{{ url('/images/third.jpg') }}" alt="Third slide">
+	      	<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
+	 			<h3>Welcome to third image</h3>
+	 		</div>
 	    </div>
 	  </div>
 	</div>
@@ -78,9 +85,9 @@
 
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      <div class="card-body" id="onhover-text-change">
+			      <div class="card-body" id="onhover-text-change-1">
 			      	<a href="#"  class="text-dark">
-			      		<img src="{{ url('/images/donationforpoor.png') }}" height="40" width="40" class="d-block ml-auto mr-auto img-fluid">
+			      		<img src="{{ url('/images/donationforpoor.png') }}" id="img_donationforpoor" height="40" width="40" class="d-block ml-auto mr-auto img-fluid">
 				        <h6 class="card-title text-center pt-3 text-of-card">Donation For Poor</h6>
 				        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 			      	</a>
@@ -90,9 +97,9 @@
 
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      <div class="card-body" id="onhover-text-change">
+			      <div class="card-body" id="onhover-text-change-2">
 			      	<a href="index.html" class="text-dark">
-			      		<img src="{{ url('/images/savethedream.png') }}" height="40" width="35" class="d-block ml-auto mr-auto">
+			      		<img src="{{ url('/images/savethedream.png') }}" id="img_savethedream" height="40" width="35" class="d-block ml-auto mr-auto">
 				        <h6 class="card-title text-center pt-3">Save The Dream</h6>
 				        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 			      	</a>
@@ -101,9 +108,9 @@
 			  </div>
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      	<div class="card-body" id="onhover-text-change">
+			      	<div class="card-body" id="onhover-text-change-3">
 				      	<a href="index.html" class="text-dark">
-				      		<img src="{{ url('/images/makeworldhappy.png') }}" height="40" width="40" class="d-block ml-auto mr-auto">
+				      		<img src="{{ url('/images/makeworldhappy.png') }}" id="img_makeworldhappy" height="40" width="40" class="d-block ml-auto mr-auto">
 					        <h6 class="card-title text-center pt-3">Make World Happy</h6>
 					        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 				      	</a>
@@ -115,9 +122,9 @@
 			<div class="row">
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      <div class="card-body" id="onhover-text-change">
+			      <div class="card-body" id="onhover-text-change-4">
 			      	<a href="#" class="text-dark">
-			      		<img src="{{ url('/images/bettereducation.png') }}" height="40" width="40" class="d-block ml-auto mr-auto">
+			      		<img src="{{ url('/images/bettereducation.png') }}" id="img_bettereducation" id="my_image" height="40" width="40" class="d-block ml-auto mr-auto">
 				        <h6 class="card-title text-center pt-3">Better Education</h6>
 				        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 			      	</a>
@@ -126,9 +133,9 @@
 			  </div>
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      <div class="card-body" id="onhover-text-change">
+			      <div class="card-body" id="onhover-text-change-5">
 			      	<a href="index.html" class="text-dark">
-			      		<img src="{{ url('/images/medicallyassisted.png') }}" height="38" width="40" class="d-block ml-auto mr-auto">
+			      		<img src="{{ url('/images/medicallyassisted.png') }}" id="img_medicallyassisted" height="38" width="40" class="d-block ml-auto mr-auto">
 				        <h6 class="card-title text-center pt-3">Medically Assisted</h6>
 				        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 			      	</a>
@@ -137,9 +144,9 @@
 			  </div>
 			  <div class="col-md-4 pb-2">
 			    <div class="card onhover-colour">
-			      <div class="card-body" id="onhover-text-change">
+			      <div class="card-body" id="onhover-text-change-6">
 			      	<a href="index.html" class="text-dark">
-			      		<img src="{{ url('/images/helpthehelpless.png') }}" height="40" width="40" class="d-block ml-auto mr-auto">
+			      		<img src="{{ url('/images/helpthehelpless.png') }}" id="img_helpthehelpless" height="40" width="40" class="d-block ml-auto mr-auto">
 				        <h6 class="card-title text-center pt-3">Help The Helpless</h6>
 				        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
 			      	</a>
