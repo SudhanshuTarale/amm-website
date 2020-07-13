@@ -14,40 +14,41 @@
 	<!-- Navbar ends --> 
 
 	<!-- Image Carousel starts -->
-	<div id="ImageCarousel" class="carousel slide" data-ride="carousel">
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 	  <div class="carousel-inner">
 	    <div class="carousel-item drk active">
-			 <img class="d-block w-100 img-fluid" src="{{ url('/images/first.jpg') }}" alt="Second slide">
-	 		<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
-	 			<h3>Welcome to first image</h3>
-	 			<button class="btn">Read More</button>&nbsp;
-	 			<button class="btn">About Us</button>
-	 		</div>
-
+	      <img class="d-block w-100" src="{{ url('/images/nasa.jpg') }}" alt="First slide">
+		    <div class="carousel-caption d-md-block">
+			    <h5>FIRST IMAGE</h5>
+			    <p>First Image</p>
+			    <button class="btn btn-primary">READ MORE</button>
+			    <button class="btn btn-primary">ABOUT US</button>
+			</div>
 	    </div>
 	    <div class="carousel-item drk">
-	      	<img class="d-block w-100 img-fluid" src="{{ url('/images/second.jpg') }}" alt="Second slide">
-	      	<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
-	 			<h3>Welcome to second image</h3>
-	 		</div>
+	      <img class="d-block w-100" src="{{ url('/images/moon.jpg') }}" alt="Second slide">
+	      	<div class="carousel-caption d-md-block">
+			    <h5>Second Image</h5>
+			    <p>Second Image</p>
+			</div>
 	    </div>
 	    <div class="carousel-item drk">
-	      	<img class="d-block w-100 img-fluid" src="{{ url('/images/third.jpg') }}" alt="Third slide">
-	      	<div class="carousel-caption d-none d-md-block w-50 ml-auto mr-auto">
-	 			<h3>Welcome to third image</h3>
-	 		</div>
+	      <img class="d-block w-100" src="{{ url('/images/galaxy.jpg') }}" alt="Third slide">
+	      	<div class="carousel-caption d-md-block">
+			    <h5>THIRD IMAGE</h5>
+			    <p>Third Image</p>
+			</div>
 	    </div>
 	  </div>
-	</div>
-	<!-- Carousel left and right controls -->
-	<a class="carousel-control-prev" href="#ImageCarousel" role="button" data-slide="prev">
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	    <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#ImageCarousel" role="button" data-slide="next">
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
-	</a>
+	  </a>
+	</div>
 	<!-- Image Carousel ends -->
 
 	<!-- Donate and Volunteer card -->
@@ -66,7 +67,7 @@
 		  <div class="col-md-6">
 		    <div class="card" id="volunteer-card">
 		      <div class="card-body border card-background rounded" >
-		      	<a href="index.html" class="text-white">
+		      	<a href="#" class="text-white">
 			        <h5 class="card-title text-center">Become a Volunteer</h5>
 			        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 		      	</a>
@@ -163,24 +164,24 @@
     	<h3 class="text-center p-5">Latest Updates</h3>
     	<div class="container">
     		<div class="row pb-5">
-    			<div class="col-md-4">
+    			<div class="col-md-4" id="latestupdates-1">
     				<div class="img-container rounded">
     					<div class="img-text text-center">01 JUN<br>2019</div>
-    					<img src="{{ url('/images/third.jpg') }}" class="w-100" style="height: 250px;">
+    					<img src="{{ url('/images/nasa.jpg') }}" class="updates-image">
     				</div>
     				<div><b>Article Heading</b><br>Some text of the latest update to go here and it has to go here only</div>
     			</div>
     			<div class="col-md-4">
     				<div class="img-container rounded">
     					<div class="img-text text-center">01 JUN<br>2019</div>
-    					<img src="{{ url('/images/first.jpg') }}" class="w-100" style="height: 250px;">
+    					<img src="{{ url('/images/moon.jpg') }}" class="updates-image">
     				</div>
     				<div><b>Article Heading</b><br>Some text of the latest update to go here and it has to go here only</div>
     			</div>
     			<div class="col-md-4">
     				<div class="img-container rounded">
     					<div class="img-text text-center">01 JUN<br>2019</div>
-    					<img src="{{ url('/images/third.jpg') }}" class="w-100" style="height: 250px;">
+    					<img src="{{ url('/images/galaxy.jpg') }}" class="updates-image">
     				</div>
     				<div><b>Article Heading</b><br>Some text of the latest update to go here and it has to go here only</div>
     			</div>

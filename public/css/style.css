@@ -1,11 +1,17 @@
-/* Home Page */
+
 .navbar-background{
 	background-color: #b11f5f;
 	font-size: 0.9rem !important;
 }
-.navbar{
+/*.navbar{
 	padding: 0px !important;
+}*/
+.rounded-li-navbar{
+	border-radius: 0.75rem;
 }
+
+
+/* Home Page */
 .card-background{
 	background-color: #b11f5f;	
 }
@@ -31,9 +37,9 @@ a:hover{
 	border-color: #4d0a27;
 }
 .img-container{
-	/*height:225px;*/
 	position: relative;
 	display: inline-block;
+	width: 100%;
 	/*margin: 10px 5px 5px;*/
 }
 .img-text{
@@ -54,23 +60,13 @@ a:hover{
 }
 .color-overlay {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: blue;
   opacity: .6;
   position: absolute;
 }
-/* h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 60px;
-  z-index: 1;
-} */
 .carousel-caption{
-	margin-bottom: 20%;
-	/*padding: 50px 100px;*/
-}
-.carousel-item{
-	height: 700px;
-	width: 100%;
+	margin-bottom: 23%;	
 }
 .drk:after {
     content:"";
@@ -81,41 +77,81 @@ a:hover{
     left:0;
     right:0;
     background:#000;
-    opacity:0.6;
+    opacity:0.7;
 }
-/*  */
+.updates-image{
+	height: 250px;
+	width: 100%;
+}
+/* Home Page ends */
+
+
 
 /* About page */
-.aboutus-image{
-	background-image:linear-gradient(black, black),url('/images/first.jpg');
-	background-blend-mode: saturation;
-	filter: grayscale(100%);
+.upper-image{
+	background:url('/images/nasa.jpg');
+	color: white;
+	height: 100vh;
+	width: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: relative;
-	color: black;
-	height: 600px;
-	z-index: -1;
+	object-fit: contain;
 }
-.aboutus-text{
-	font-size: 2rem;
-	font-weight: 600;
-	margin-left: 40%;
-	margin-top: 40%;
-	margin-bottom: 40%;
+
+.colour-overlay{
+	width: 100%;
+	height: 100vh;
+	background: #030354;
+	opacity: 0.4;
+	position: absolute;
 }
+.aboutus-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  z-index: 1;
+}
+.aboutus-subtext {
+  margin-left: 16%;
+  margin-right: 16%;
+  z-index: 1;
+}
+
+.image_column{
+	display: flex;
+	align-items: flex-end;
+}
+
+.aboutus-description{
+	margin-top: 10%;
+	margin-left: 9%;
+	margin-right: 5%;
+}
+
 /*  */
+
+
 footer{
 	background-color: #030354;
 }
-header {
-    height: 600px;
-    width: 100vw;
-    background: black;
-    overflow: hidden;
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi");
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+
+@media (max-width: 800px) {
+      #aboutus-man{
+            display:none;
+   }
+   .image_column{
+   	display: none;
+   }
 }
 
-img {
-   object-fit: cover;
+@media (max-width: 800px){
+	.carousel-caption{
+		margin-bottom: 15%;	
+	}
+}
+
+@media (max-width: 450px){
+	.carousel-caption{
+		margin-bottom: 4%;	
+	}
 }
